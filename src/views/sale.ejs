@@ -1,0 +1,54 @@
+<%- include('partials/header.ejs') %>
+
+<div class="content">
+    <div class="header-content">
+        <div class="title-content">
+          <span>Saida de Peças</span>
+        </div>
+        <div class="icon-content">
+          <i class="fa-solid fa-ellipsis"></i>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>   
+      <div class="button-acoes">
+        <a href="/sale/add"><button>Nova Saída</button></a>
+        <a href="/lending/add"><button>Novo Empréstimo</button></a>
+      </div>
+      <div class="container">
+        <div class="search">
+            <input type="search" placeholder="Pesquise...">
+            <a href=""><button>Buscar</button></a>
+        </div>
+      <div class="table-content">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Código da Peça</th>
+                    <th>Peça</th>
+                    <th>Quantidade</th>
+                    <th>Relatório</th>
+                    <th>Consultor Técnico</th>
+                    <th>Data</th>
+                    <th>Justificativa</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234</td>
+                    <td>Bibag</td>
+                    <td>1</td>
+                    <td>BR22O88</td>
+                    <td>Kaique Masqueto</td>
+                    <td>24/04/2023</td>
+                    <td>Consumo</td>
+                    <td>
+                        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                        <a href=""><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+</div>

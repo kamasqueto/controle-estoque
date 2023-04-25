@@ -1,0 +1,28 @@
+.container {
+    width: 98%;
+    margin-top: 3rem;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+}
+
+.search input {
+    border-radius: .5rem;
+    border: 1px solid gainsboro;
+    margin-right: 1rem;
+}
+
+.search button {
+  text-decoration: none;
+  border: none;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  width: 5rem;
+  height: 2rem;
+  background-color: #1d306b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

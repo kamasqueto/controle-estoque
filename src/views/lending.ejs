@@ -1,0 +1,51 @@
+<%- include('partials/header.ejs') %>
+
+<div class="content">
+    <div class="header-content">
+        <div class="title-content">
+          <span>Empréstimo de Peças</span>
+        </div>
+        <div class="icon-content">
+          <i class="fa-solid fa-ellipsis"></i>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>   
+      <div class="button-acoes">
+        <a href="/lending/add"><button>Salvar</button></a>
+        <a href="/sale"><button>Voltar</button></a>
+      </div>
+    <div class="container">
+        <form action="" method="POST">
+            <div class="mb-3">
+                <label for="" class="form-label">Código da Peça</label>
+                <input type="text" class="form-control" name="cod-pecas">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Peça</label>
+                <input type="text" class="form-control" name="nome">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Quantidade</label>
+                <input type="text" class="form-control" name="quantidade">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Número Relatório</label>
+                <input type="text" class="form-control" name="numero_relatorio_saida">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Consultor Técnico</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Kaique Masqueto</option>
+                    <option value="2">Rafael Riera</option>
+                    <option value="3">Sidnei Cunha</option>
+                  </select>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Data</label>
+                <input type="date" class="form-control" name="data">
+            </div>
+            <input type="hidden" name="justificativa" value="Empréstimo">
+        </form>
+    </div>
+</div>
